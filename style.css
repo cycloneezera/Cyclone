@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e88e5, #0d47a1); /* Degradê de azul */
+    color: white; /* Texto branco para contraste */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    backdrop-filter: blur(5px); /* Efeito de vidro */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color: #fff; /* Títulos brancos */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#counter {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #ffeb3b; /* Amarelo para o contador */
+}
+
+.gallery {
+    margin: 40px 0;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.music, .texts {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding
+
+// Data do início do relacionamento: 19/10/2023 às 20:15
+const startDate = new Date(2023, 9, 19, 20, 15, 0); // Mês 9 = Outubro
+
+function updateCounter() {
+    const now = new Date();
+    const diff = now - startDate;
+
+    // Cálculo do tempo
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    // Atualiza o HTML
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
+// Atualiza a cada segundo
+setInterval(updateCounter, 1000);
+updateCounter(); // Inicia imediatamente
+
+.love-bar {
+    overflow: visible; /* Permite que o preenchimento ultrapasse */
+}
+
+.bar-fill {
+    box-shadow: 0 0 10px rgba(214, 51, 108, 0.5); /* Sombra rosa */
+}
+
+#yourScore .love-btn:active ~ .love-bar .bar-fill {
+    box-shadow: 0 0 15px #5d9cec; /* Brilho azul quando você clica */
+}

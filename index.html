@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor ❤️</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap">
+    <style>
+        /* ESTILOS GERAIS ROMÂNTICOS */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #ffcce6, #ffb3d9);
+            color: #5a2a44;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Corações flutuantes */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff66b3" opacity="0.1"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+            background-size: 100px;
+            animation: floatingHearts 50s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes floatingHearts {
+            0% { background-position: 0 0 }
+            100% { background-position: 1000px 1000px }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(214, 112, 165, 0.3);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, #ff66b3, #ff99cc, #ffb3d9, #ffccff);
+            z-index: -1;
+            border-radius: 30px;
+            opacity: 0.2;
+            animation: gradientGlow 8s ease infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradientGlow {
+            0% { background-position: 0% 50% }
+            50% { background-position: 100% 50% }
+            100% { background-position: 0% 50% }
+        }
+
+        /* CABEÇALHO ROMÂNTICO */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        header::after {
+            content: "❤️";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: translateX(-50%) scale(1) }
+            25% { transform: translateX(-50%) scale(1.1) }
+            50% { transform: translateX(-50%) scale(1) }
+            75% { transform: translateX(-50%) scale(1.1) }
+            100% { transform: translateX(-50%) scale(1) }
+        }
+
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #d6336c;
+            text-shadow: 2px 2px 4px rgba(214, 51, 108, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #d6336c, #f06595);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin: 30px 0 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #f06595, transparent);
+        }
+
+        /* CONTADOR DE TEMPO */
+        #counter {
+            font-size: 1.3rem;
+            margin: 20px 0;
+            color: #d6336c;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 50px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(214, 51, 108, 0.1);
+            border: 1px solid rgba(214, 51, 108, 0.2);
+        }
+
+        #counter span {
+            font-weight: bold;
+            color: #c2255c;
+        }
+
+        /* GALERIA DE FOTOS */
+        .gallery {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .photos img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 3px solid white;
+        }
+
+        .photos img:hover {
+            transform: scale(1.05) rotate(-2deg);
+            box-shadow: 0 8px 25px rgba(214, 51, 108, 0.3);
+            border-color: #f8a5c2;
+        }
+
+        /* SEÇÃO DE MÚSICAS */
+        .music {
+            margin: 50px 0;
+        }
+
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .music-square {
+            aspect-ratio: 1/1;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(214, 51, 108, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid rgba(255, 182, 193, 0.5);
+        }
+
+        .music-square:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(214, 51, 108, 0.2);
+        }
+
+        .music-square::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 105, 180, 0.1), rgba(255, 182, 193, 0.1));
+            border-radius: 20px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .music-square iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .music-label {
+            background: rgba(214, 51, 108, 0.8);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* MENSAGEM ROMÂNTICA */
+        .texts {
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .message {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(214, 51, 108, 0.1);
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid #ffccd5;
+        }
+
+        .message::before {
+            content: "❤️";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            background: white;
+            padding: 0 15px;
+        }
+
+        .message p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #5a2a44;
+            margin: 0;
+        }
+
+        /* RODAPÉ ROMÂNTICO */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #d6336c;
+            font-size: 1rem;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer::before {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #f06595, transparent);
+            margin: 0 auto 20px;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .photos img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .music-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            #counter {
+                font-size: 1.1rem;
+                padding: 10px;
+            }
+            
+            .photos {
+                gap: 10px;
+            }
+            
+            .photos img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .music-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .message {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nosso Tempo Juntos</h1>
+            <div id="counter">
+                <span id="days">00</span> dias, 
+                <span id="hours">00</span> horas, 
+                <span id="minutes">00</span> minutos, 
+                <span id="seconds">00</span> segundos de amor!
+            </div>
+        </header>
+
+        <section class="gallery">
+            <h2>Minha Felicidade ❤️</h2>
+            <div class="photos">
+                <img src="foto1.jpg" alt="Nossa foto 1">
+                <img src="foto2.jpg" alt="Nossa foto 2">
+                <img src="foto3.jpg" alt="Nossa foto 3">
+                <img src="foto4.jpg" alt="Nossa foto 4">
+                <img src="foto5.jpg" alt="Nossa foto 5">
+                <img src="foto6.jpg" alt="Nossa foto 6">
+                <img src="foto7.jpg" alt="Nossa foto 7">
+                <img src="foto8.jpg" alt="Nossa foto 8">
+            </div>
+        </section>
+
+        <section class="music">
+            <h2>Nossas Músicas</h2>
+            <div class="music-grid">
+                <!-- Música 1 -->
+                <div class="music-square">
+                    <iframe src="https://open.spotify.com/embed/track/51rfRCiUSvxXlCSCfIztBy" 
+                            allow="encrypted-media" 
+                            loading="lazy"></iframe>
+                    <div class="music-label">I Love You I'm Sorry - Gracie Abrams</div>
+                </div>
+                
+                <!-- Música 2 -->
+                <div class="music-square">
+                    <iframe src="https://open.spotify.com/embed/track/6nGeLlakfzlBcFdZXteDq7" 
+                            allow="encrypted-media" 
+                            loading="lazy"></iframe>
+                    <div class="music-label">Love Story - Indilla</div>
+                </div>
+                
+                <!-- Música 3 -->
+                <div class="music-square">
+                    <iframe src="https://open.spotify.com/embed/track/6P6sR5Qd5xWzuuSwkib0Zu" 
+                            allow="encrypted-media" 
+                            loading="lazy"></iframe>
+                    <div class="music-label">No More Excuses - Prod. 94</div>
+                </div>
+                
+                <!-- Música 4 -->
+                <div class="music-square">
+                    <iframe src="https://open.spotify.com/embed/track/1jXfVzMk8cSbvAXMML4Y4f" 
+                            allow="encrypted-media" 
+                            loading="lazy"></iframe>
+                    <div class="music-label">I Like Me Better - Lauv</div>
+                </div>
+                
+                <!-- Música 5 -->
+                <div class="music-square">
+                    <iframe src="https://open.spotify.com/embed/track/10M1koRXx1iKAR67VW2CxE" 
+                            allow="encrypted-media" 
+                            loading="lazy"></iframe>
+                    <div class="music-label">5KM - Henrique & Juliano</div>
+                </div>
+                
+                <!-- Música 6 -->
+                <div class="music-square">
+                    <iframe src="https://open.spotify.com/embed/track/1MnUXXQEuzlJFNF5xMH1XQ" 
+                            allow="encrypted-media" 
+                            loading="lazy"></iframe>
+                    <div class="music-label">Nessas Horas - Matheus & Kauan</div>
+                </div>
+            </div>
+        </section>
+        <section class="love-game-offline">
+            <h2>Quem sente mais saudade? ❤️</h2>
+            <div class="score-container">
+                <div class="player-score" id="herScore">
+                    <span>Ela</span>
+                    <div class="score">0</div>
+                    <button class="love-btn" onclick="addScore('her')">Clicar</button>
+                </div>
+                
+                <div class="vs">VS</div>
+                
+                <div class="player-score" id="yourScore">
+                    <span>Você</span>
+                    <div class="score">0</div>
+                    <button class="love-btn" onclick="addScore('you')">Clicar</button>
+                </div>
+            </div>
+            
+            <div class="love-bar">
+                <div class="bar-fill" id="loveBar"></div>
+            </div>
+            
+            <p class="love-message" id="loveMessage">A saudade tá acumulando... quem vai ganhar?</p>
+        </section>
+        
+        <style>
+            /* ESTILOS DO JOGO OFFLINE */
+            .love-game-offline {
+                margin: 50px auto;
+                padding: 20px;
+                max-width: 600px;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 20px;
+                box-shadow: 0 5px 15px rgba(214, 51, 108, 0.2);
+            }
+            
+            .score-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 30px 0;
+            }
+            
+            .player-score {
+                flex: 1;
+                text-align: center;
+                padding: 15px;
+                border-radius: 15px;
+            }
+            
+            .player-score span {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
+                color: #5a2a44;
+            }
+            
+            #herScore {
+                background: rgba(255, 182, 193, 0.3);
+                border: 2px dashed #ff66b3;
+            }
+            
+            #yourScore {
+                background: rgba(173, 216, 230, 0.3);
+                border: 2px dashed #5d9cec;
+            }
+            
+            .score {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin: 10px 0;
+                color: #d6336c;
+            }
+            
+            #yourScore .score {
+                color: #3a7bd5;
+            }
+            
+            .vs {
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 0 20px;
+                color: #d6336c;
+            }
+            
+            .love-btn {
+                background: linear-gradient(45deg, #ff66b3, #ff99cc);
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 50px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: all 0.3s;
+                box-shadow: 0 3px 10px rgba(214, 51, 108, 0.3);
+            }
+            
+            #yourScore .love-btn {
+                background: linear-gradient(45deg, #5d9cec, #7ab1f0);
+                box-shadow: 0 3px 10px rgba(58, 123, 213, 0.3);
+            }
+            
+            .love-btn:active {
+                transform: scale(0.95);
+            }
+            
+            .love-bar {
+                width: 100%;
+                height: 30px;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 15px;
+                margin: 20px 0;
+                overflow: hidden;
+                position: relative;
+                box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+            }
+            
+            .bar-fill {
+                height: 100%;
+                width: 50%;
+                background: linear-gradient(90deg, #ff66b3, #d6336c);
+                border-radius: 15px;
+                transition: width 0.5s ease;
+            }
+            
+            .love-message {
+                font-style: italic;
+                color: #d6336c;
+                margin-top: 20px;
+            }
+            
+            @media (max-width: 600px) {
+                .score-container {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                
+                .vs {
+                    padding: 10px 0;
+                }
+            }
+        </style>
+        
+        <script>
+            // Carrega as pontuações salvas no localStorage
+            let herScore = localStorage.getItem('herSaudadeScore') || 0;
+            let yourScore = localStorage.getItem('yourSaudadeScore') || 0;
+            
+            // Atualiza a exibição inicial
+            updateScores();
+            
+            function addScore(player) {
+                if (player === 'her') {
+                    herScore++;
+                    localStorage.setItem('herSaudadeScore', herScore);
+                } else {
+                    yourScore++;
+                    localStorage.setItem('yourSaudadeScore', yourScore);
+                }
+                
+                updateScores();
+                showMessage();
+            }
+            
+            function updateScores() {
+                document.querySelector('#herScore .score').textContent = herScore;
+                document.querySelector('#yourScore .score').textContent = yourScore;
+                
+                // Atualiza a barra de amor
+                const total = herScore + yourScore;
+                const herPercentage = total > 0 ? (herScore / total) * 100 : 50;
+                document.getElementById('loveBar').style.width = `${herPercentage}%`;
+            }
+            
+            function showMessage() {
+                const messages = [
+                    "Alguém tá com saudade! 💘",
+                    "A distância não apaga o amor!",
+                    "Cada clique é um beijo virtual! 😘",
+                    "Quem vai vencer dessa vez?",
+                    "Saudade é o amor que fica quando você vai embora..."
+                ];
+                
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                document.getElementById('loveMessage').textContent = randomMessage;
+                
+                // Efeito de coração pulsante ao clicar
+                const hearts = ["❤️", "💖", "💘", "💝", "💓"];
+                const randomHeart = hearts[Math.floor(Math.random() * hearts.length)];
+                
+                const heartElement = document.createElement('div');
+                heartElement.textContent = randomHeart;
+                heartElement.style.position = 'absolute';
+                heartElement.style.fontSize = '25px';
+                heartElement.style.animation = 'floatHeart 2s ease-out forwards';
+                
+                document.body.appendChild(heartElement);
+                
+                // Posiciona o coração aleatoriamente
+                const xPos = Math.random() * window.innerWidth;
+                heartElement.style.left = `${xPos}px`;
+                heartElement.style.top = '80vh';
+                
+                // Remove após a animação
+                setTimeout(() => heartElement.remove(), 2000);
+            }
+            
+            // Adicione ao seu CSS existente:
+            // @keyframes floatHeart { to { transform: translateY(-100px) rotate(20deg); opacity: 0; } }
+        </script>
+        
+<html lang="pt-BR">
+<head>
+    <!-- [Todo o cabeçalho e estilos existentes permanecem iguais] -->
+    <style>
+        /* [Todos os estilos anteriores permanecem aqui] */
+
+        /* NOVOS ESTILOS PARA A SEÇÃO DE MOTIVOS */
+        .love-reasons {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .reasons-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(214, 51, 108, 0.1);
+        }
+
+        .reason-item {
+            margin: 15px 0;
+            padding: 12px;
+            background: rgba(255, 182, 193, 0.2);
+            border-radius: 10px;
+            position: relative;
+            text-align: left;
+            padding-left: 50px;
+        }
+
+        .reason-item::before {
+            content: "❤️";
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .reason-item {
+                padding-left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- [Todo o conteúdo existente permanece igual até a seção de músicas] -->
+
+            </div>
+        </section>
+
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <!-- [Todo o cabeçalho e estilos existentes permanecem iguais] -->
+            <style>
+                /* [Todos os estilos anteriores permanecem aqui] */
+        
+                /* NOVOS ESTILOS PARA A SEÇÃO DE MOTIVOS EM QUADRADOS */
+                .love-reasons {
+                    margin: 50px 0;
+                    text-align: center;
+                }
+        
+                .reasons-container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    gap: 20px;
+                    margin-top: 30px;
+                }
+        
+                .reason-item {
+                    background: rgba(255, 255, 255, 0.9);
+                    padding: 20px;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 10px rgba(214, 51, 108, 0.1);
+                    transition: all 0.3s ease;
+                    min-height: 120px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    position: relative;
+                    border: 1px solid rgba(255, 182, 193, 0.3);
+                }
+        
+                .reason-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 20px rgba(214, 51, 108, 0.2);
+                    background: rgba(255, 255, 255, 1);
+                }
+        
+                .reason-item::before {
+                    content: "❤";
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 1rem;
+                    opacity: 0.7;
+                }
+        
+                @media (max-width: 768px) {
+                    .reasons-container {
+                        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                    }
+                }
+        
+                @media (max-width: 480px) {
+                    .reasons-container {
+                        grid-template-columns: 1fr;
+                    }
+                    
+                    .reason-item {
+                        min-height: 100px;
+                        padding: 15px;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <!-- [Todo o conteúdo existente permanece igual até a seção de músicas] -->
+        
+                <!-- NOVA SEÇÃO COM MOTIVOS EM QUADRADOS -->
+                <section class="love-reasons">
+                    <h2>Motivos do Porque Eu Te Amo</h2>
+                    <div class="reasons-container">
+                        <div class="reason-item">Pelo seu sorriso que ilumina meus dias mais cinzentos</div>
+                        <div class="reason-item">Pela forma como você me entende sem eu precisar falar</div>
+                        <div class="reason-item">Pela sua paciência em me ensinar coisas novas</div>
+                        <div class="reason-item">Pelo jeito carinhoso que você cuida de mim</div>
+                        <div class="reason-item">Por suas lerdezas</div>
+                        <div class="reason-item">Pela nossa conexão que só cresce com o tempo</div>
+                        <div class="reason-item">Por cada detalhe único que faz você ser você</div>
+                        <div class="reason-item">Pela suas preocupações</div>
+                        <div class="reason-item">Pelo seus sonhos ao meu lado</div>
+                        <div class="reason-item">Pelo seu jeito fofo e engraçado</div>
+                        <div class="reason-item">Seu gosto musical</div>
+                        <div class="reason-item">As inseguranças que superamos juntos</div>
+                        <div class="reason-item">As pequenas coisas que faz pela gente</div>
+                        <div class="reason-item">O jeito que você demonstra seu amor</div>
+                        <div class="reason-item">A forma como faz me sentir especial</div>
+                        <div class="reason-item">A conexão que temos</div>
+                        <div class="reason-item">Os detalhes que lembra você</div>
+                        <div class="reason-item">O jeito que me deixa com saudade</div>
+                        <div class="reason-item">O fato de que, mesmo com os desafios, escolhemos um ao outro</div>
+                        <div class="reason-item">Simplesmente porque é você</div>
+                    </div>
+                </section>
+        
+                <!-- [O restante do seu conteúdo permanece igual] -->
+                <section class="texts">
+                    <h2>Mensagem para Você</h2>
+                    <div class="message">
+                        <p>É complicado dizer o quanto você significa pra mim, mas vou tentar, pois você merece saber o quão especial é. Desde que você surgiu, tudo se transformou. Você trouxe uma energia incrível, uma emoção fora do comum, um sentimento inexplicável. Senti coisas inimagináveis ao seu lado.
+
+                            Amo as nossas conversas que duram horas, as confissões, os medos, as inseguranças... porque mesmo quando as coisas parecem difíceis, no final, sempre encontramos um jeito de nos entender. Não importa o que aconteça, eu sempre vou querer estar ao seu lado, porque a nossa conexão é algo raro, algo que não se encontra por aí.
+                            
+                            Se tem uma coisa que eu aprendi desde que te conheci, é que o amor verdadeiro não é apenas sobre momentos bons. É sobre escolher a pessoa todos os dias, mesmo quando as coisas não estão fáceis. E eu te escolho. Hoje, amanhã e sempre.</p>
+                    </div>
+                </section>
+        
+                <footer>
+                    Feito com todo meu amor ❤️ por [Cyclone]
+                </footer>
+            </div>
+        
+            <!-- [Seu script JavaScript permanece igual] -->
+        </body>
+        </html>
+
+    <script>
+        // Configura a data de início do relacionamento (ano, mês-1, dia, hora, minuto)
+        const startDate = new Date(2024, 9, 19, 20, 15); // 19 de outubro de 2023, 20:15
+
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Atualiza a cada segundo
+        setInterval(updateCounter, 1000);
+        updateCounter(); // Inicia imediatamente
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinhos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffcce6, #ffb3d9);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #5a2a44;
+        }
+        
+        .game-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(214, 112, 165, 0.3);
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #d6336c;
+            margin-bottom: 20px;
+        }
+        
+        #checkersBoard {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 0;
+            border: 3px solid #5a2a44;
+            margin: 0 auto;
+            max-width: 500px;
+            aspect-ratio: 1/1;
+            background: #f0d9b5;
+        }
+        
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .dark {
+            background-color: #b58863;
+        }
+        
+        .light {
+            background-color: #f0d9b5;
+        }
+        
+        .piece {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .pink {
+            background: linear-gradient(145deg, #ff66b3, #ff99cc);
+        }
+        
+        .blue {
+            background: linear-gradient(145deg, #5d9cec, #7ab1f0);
+        }
+        
+        .king::after {
+            content: "♕";
+            position: absolute;
+            font-size: 20px;
+            color: gold;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+        
+        .selected {
+            box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.7);
+        }
+        
+        .possible-move {
+            box-shadow: inset 0 0 15px rgba(0, 255, 0, 0.5);
+        }
+        
+        .must-capture {
+            animation: pulseBorder 1s infinite;
+        }
+        
+        .capture-path {
+            box-shadow: inset 0 0 15px rgba(255, 165, 0, 0.7);
+        }
+        
+        @keyframes pulseBorder {
+            0% { box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5); }
+            50% { box-shadow: 0 0 0 6px rgba(255, 0, 0, 0.8); }
+            100% { box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5); }
+        }
+        
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        
+        #currentPlayer {
+            font-weight: bold;
+        }
+        
+        button {
+            background: linear-gradient(45deg, #d6336c, #f06595);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 600px) {
+            #checkersBoard {
+                max-width: 300px;
+            }
+            
+            .king::after {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Joguinhos</h1>
+        
+        <div id="checkersBoard"></div>
+        
+        <div class="game-info">
+            <div id="currentPlayer">Vez: <span style="color:#ff66b3">Ela (Rosa)</span></div>
+            <button onclick="resetGame()">Reiniciar Jogo</button>
+        </div>
+    </div>
+
+    <script>
+        // Variáveis do jogo
+        let board = [];
+        let currentPlayer = 'pink';
+        let selectedPiece = null;
+        let mustCapture = false;
+        let piecesThatMustCapture = [];
+        let multipleCaptureMode = false;
+        let currentCapturePath = [];
+        
+        // Inicializa o jogo
+        function initGame() {
+            createBoard();
+            setupPieces();
+            updateCurrentPlayerDisplay();
+            checkForMandatoryCaptures();
+        }
+        
+        // Cria o tabuleiro vazio
+        function createBoard() {
+            const boardElement = document.getElementById('checkersBoard');
+            boardElement.innerHTML = '';
+            
+            board = [];
+            for (let row = 0; row < 8; row++) {
+                board[row] = [];
+                for (let col = 0; col < 8; col++) {
+                    board[row][col] = null;
+                    
+                    const square = document.createElement('div');
+                    square.className = `square ${(row + col) % 2 === 0 ? 'light' : 'dark'}`;
+                    square.dataset.row = row;
+                    square.dataset.col = col;
+                    
+                    square.addEventListener('click', () => handleSquareClick(row, col));
+                    boardElement.appendChild(square);
+                }
+            }
+        }
+        
+        // Posiciona as peças iniciais
+        function setupPieces() {
+            for (let row = 0; row < 8; row++) {
+                for (let col = 0; col < 8; col++) {
+                    if ((row + col) % 2 !== 0) {
+                        if (row < 3) {
+                            board[row][col] = { type: 'blue', king: false };
+                        } else if (row > 4) {
+                            board[row][col] = { type: 'pink', king: false };
+                        }
+                    }
+                }
+            }
+            updateBoardView();
+        }
+        
+        // Atualiza a visualização do tabuleiro
+        function updateBoardView() {
+            document.querySelectorAll('.square').forEach(square => {
+                const row = parseInt(square.dataset.row);
+                const col = parseInt(square.dataset.col);
+                square.innerHTML = '';
+                square.classList.remove('must-capture', 'capture-path');
+                
+                if (board[row][col]) {
+                    const piece = document.createElement('div');
+                    piece.className = `piece ${board[row][col].type} ${board[row][col].king ? 'king' : ''}`;
+                    piece.dataset.row = row;
+                    piece.dataset.col = col;
+                    square.appendChild(piece);
+                }
+            });
+            
+            // Destaca peças com captura obrigatória
+            piecesThatMustCapture.forEach(({row, col}) => {
+                const square = document.querySelector(`.square[data-row="${row}"][data-col="${col}"]`);
+                if (square) square.classList.add('must-capture');
+            });
+            
+            // Destaca caminhos de captura
+            currentCapturePath.forEach(({row, col}) => {
+                const square = document.querySelector(`.square[data-row="${row}"][data-col="${col}"]`);
+                if (square) square.classList.add('capture-path');
+            });
+        }
+        
+        // Lida com cliques no tabuleiro
+        function handleSquareClick(row, col) {
+            // Se já tem uma peça selecionada, tenta mover
+            if (selectedPiece) {
+                tryMove(selectedPiece.row, selectedPiece.col, row, col);
+                return;
+            }
+            
+            // Verifica se clicou em uma peça válida
+            const piece = board[row][col];
+            if (!piece || piece.type !== currentPlayer) return;
+            
+            // Se há captura obrigatória, verifica se esta peça pode capturar
+            if (mustCapture && !multipleCaptureMode) {
+                const canThisPieceCapture = piecesThatMustCapture.some(
+                    p => p.row === row && p.col === col
+                );
+                if (!canThisPieceCapture) {
+                    alert("Você deve capturar com uma das peças destacadas!");
+                    return;
+                }
+            }
+            
+            // Seleciona a peça
+            selectedPiece = { row, col };
+            document.querySelector(`.piece[data-row="${row}"][data-col="${col}"]`).classList.add('selected');
+            showPossibleMoves(row, col);
+        }
+        
+        // Mostra movimentos possíveis
+        function showPossibleMoves(row, col) {
+            clearHighlights();
+            
+            const piece = board[row][col];
+            const directions = getMoveDirections(piece);
+            let hasCaptures = false;
+            
+            // Verifica capturas possíveis
+            for (const [rowDir, colDir] of directions) {
+                const captureRow = row + rowDir;
+                const captureCol = col + colDir;
+                const landRow = row + 2 * rowDir;
+                const landCol = col + 2 * colDir;
+                
+                if (isValidPosition(captureRow, captureCol) && 
+                    isValidPosition(landRow, landCol) &&
+                    board[captureRow][captureCol] && 
+                    board[captureRow][captureCol].type !== piece.type && 
+                    !board[landRow][landCol]) {
+                    
+                    hasCaptures = true;
+                    const square = document.querySelector(`.square[data-row="${landRow}"][data-col="${landCol}"]`);
+                    square.classList.add('possible-move');
+                    currentCapturePath.push({row: landRow, col: landCol});
+                }
+            }
+            
+            // Se não houver capturas e não for obrigatório, mostra movimentos normais
+            if (!hasCaptures && !mustCapture) {
+                if (piece.king) {
+                    // Movimentos longos para damas
+                    for (const [rowDir, colDir] of directions) {
+                        let steps = 1;
+                        while (true) {
+                            const moveRow = row + rowDir * steps;
+                            const moveCol = col + colDir * steps;
+                            
+                            if (!isValidPosition(moveRow, moveCol) || board[moveRow][moveCol]) break;
+                            
+                            const square = document.querySelector(`.square[data-row="${moveRow}"][data-col="${moveCol}"]`);
+                            square.classList.add('possible-move');
+                            steps++;
+                        }
+                    }
+                } else {
+                    // Movimentos curtos para peças normais
+                    for (const [rowDir, colDir] of directions) {
+                        const moveRow = row + rowDir;
+                        const moveCol = col + colDir;
+                        
+                        if (isValidPosition(moveRow, moveCol) && !board[moveRow][moveCol]) {
+                            const square = document.querySelector(`.square[data-row="${moveRow}"][data-col="${moveCol}"]`);
+                            square.classList.add('possible-move');
+                        }
+                    }
+                }
+            }
+            
+            updateBoardView();
+        }
+        
+        // Tenta mover uma peça
+        function tryMove(fromRow, fromCol, toRow, toCol) {
+            const piece = board[fromRow][fromCol];
+            if (!piece || piece.type !== currentPlayer) return;
+            
+            const rowDiff = toRow - fromRow;
+            const colDiff = toCol - fromCol;
+            
+            // Verifica se é um movimento de captura
+            if (Math.abs(rowDiff) === 2 && Math.abs(colDiff) === 2) {
+                const captureRow = fromRow + rowDiff/2;
+                const captureCol = fromCol + colDiff/2;
+                
+                if (isValidPosition(captureRow, captureCol) && 
+                    board[captureRow][captureCol] && 
+                    board[captureRow][captureCol].type !== piece.type && 
+                    !board[toRow][toCol]) {
+                    
+                    // Executa a captura
+                    board[captureRow][captureCol] = null;
+                    movePiece(fromRow, fromCol, toRow, toCol);
+                    
+                    // Verifica se pode capturar novamente
+                    if (canCaptureAgain(toRow, toCol)) {
+                        mustCapture = true;
+                        multipleCaptureMode = true;
+                        piecesThatMustCapture = [{row: toRow, col: toCol}];
+                        selectedPiece = {row: toRow, col: toCol};
+                        currentCapturePath = [];
+                        showPossibleMoves(toRow, toCol);
+                        return;
+                    }
+                    
+                    // Se não puder capturar mais, finaliza o turno
+                    multipleCaptureMode = false;
+                    currentCapturePath = [];
+                    endTurn();
+                    return;
+                }
+            }
+            
+            // Verifica movimento normal (apenas se não houver captura obrigatória)
+            if (!mustCapture) {
+                // Movimento da dama
+                if (piece.king && Math.abs(rowDiff) === Math.abs(colDiff)) {
+                    const rowStep = rowDiff > 0 ? 1 : -1;
+                    const colStep = colDiff > 0 ? 1 : -1;
+                    let validMove = true;
+                    
+                    // Verifica se o caminho está livre
+                    let checkRow = fromRow + rowStep;
+                    let checkCol = fromCol + colStep;
+                    
+                    while (checkRow !== toRow && checkCol !== toCol) {
+                        if (board[checkRow][checkCol] !== null) {
+                            validMove = false;
+                            break;
+                        }
+                        checkRow += rowStep;
+                        checkCol += colStep;
+                    }
+                    
+                    if (validMove && !board[toRow][toCol]) {
+                        movePiece(fromRow, fromCol, toRow, toCol);
+                        endTurn();
+                        return;
+                    }
+                } 
+                // Movimento de peça normal
+                else if (Math.abs(colDiff) === 1 && isNormalMoveValid(piece, rowDiff)) {
+                    if (!board[toRow][toCol]) {
+                        movePiece(fromRow, fromCol, toRow, toCol);
+                        endTurn();
+                        return;
+                    }
+                }
+            }
+            
+            // Movimento inválido
+            alert(`Movimento inválido! ${mustCapture ? "Você deve realizar capturas primeiro!" : ""}`);
+            selectedPiece = null;
+            clearHighlights();
+        }
+        
+        // Move uma peça
+        function movePiece(fromRow, fromCol, toRow, toCol) {
+            const piece = board[fromRow][fromCol];
+            
+            // Move a peça
+            board[toRow][toCol] = piece;
+            board[fromRow][fromCol] = null;
+            
+            // Verifica se virou dama
+            if ((piece.type === 'pink' && toRow === 0) || (piece.type === 'blue' && toRow === 7)) {
+                piece.king = true;
+            }
+            
+            // Limpa seleção
+            selectedPiece = null;
+            clearHighlights();
+            
+            // Verifica se o jogo acabou
+            if (isGameOver()) {
+                setTimeout(() => {
+                    alert(`Parabéns! ${currentPlayer === 'pink' ? 'Ela (Rosa)' : 'Você (Azul)'} venceu!`);
+                    resetGame();
+                }, 100);
+                return;
+            }
+        }
+        
+        // Finaliza o turno
+        function endTurn() {
+            // Troca o jogador
+            currentPlayer = currentPlayer === 'pink' ? 'blue' : 'pink';
+            checkForMandatoryCaptures();
+            updateCurrentPlayerDisplay();
+            updateBoardView();
+        }
+        
+        // Verifica se o jogo acabou
+        function isGameOver() {
+            let pinkPieces = 0;
+            let bluePieces = 0;
+            
+            for (let row = 0; row < 8; row++) {
+                for (let col = 0; col < 8; col++) {
+                    const piece = board[row][col];
+                    if (piece) {
+                        if (piece.type === 'pink') pinkPieces++;
+                        else bluePieces++;
+                    }
+                }
+            }
+            
+            return pinkPieces === 0 || bluePieces === 0;
+        }
+        
+        // Verifica se há capturas obrigatórias
+        function checkForMandatoryCaptures() {
+            mustCapture = false;
+            multipleCaptureMode = false;
+            piecesThatMustCapture = [];
+            currentCapturePath = [];
+            
+            for (let row = 0; row < 8; row++) {
+                for (let col = 0; col < 8; col++) {
+                    const piece = board[row][col];
+                    if (piece && piece.type === currentPlayer && canCapture(row, col)) {
+                        mustCapture = true;
+                        piecesThatMustCapture.push({row, col});
+                    }
+                }
+            }
+        }
+        
+        // Verifica se uma peça pode capturar
+        function canCapture(row, col) {
+            const piece = board[row][col];
+            const directions = getMoveDirections(piece);
+            
+            for (const [rowDir, colDir] of directions) {
+                const captureRow = row + rowDir;
+                const captureCol = col + colDir;
+                const landRow = row + 2 * rowDir;
+                const landCol = col + 2 * colDir;
+                
+                if (isValidPosition(captureRow, captureCol) && 
+                    isValidPosition(landRow, landCol) &&
+                    board[captureRow][captureCol] && 
+                    board[captureRow][captureCol].type !== piece.type && 
+                    !board[landRow][landCol]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        
+        // Verifica se pode capturar novamente
+        function canCaptureAgain(row, col) {
+            const piece = board[row][col];
+            const directions = getMoveDirections(piece);
+            
+            for (const [rowDir, colDir] of directions) {
+                const captureRow = row + rowDir;
+                const captureCol = col + colDir;
+                const landRow = row + 2 * rowDir;
+                const landCol = col + 2 * colDir;
+                
+                if (isValidPosition(captureRow, captureCol) && 
+                    isValidPosition(landRow, landCol) &&
+                    board[captureRow][captureCol] && 
+                    board[captureRow][captureCol].type !== piece.type && 
+                    !board[landRow][landCol]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        
+        // Retorna as direções possíveis de movimento
+        function getMoveDirections(piece) {
+            if (piece.king) {
+                return [[-1, -1], [-1, 1], [1, -1], [1, 1]]; // Dama move em todas as direções
+            }
+            return piece.type === 'pink' ? [[-1, -1], [-1, 1]] : [[1, -1], [1, 1]]; // Peças normais
+        }
+        
+        // Verifica se movimento normal é válido
+        function isNormalMoveValid(piece, rowDiff) {
+            if (piece.king) return true; // Damas podem mover para frente e para trás
+            return piece.type === 'pink' ? rowDiff === -1 : rowDiff === 1;
+        }
+        
+        // Verifica se a posição está dentro do tabuleiro
+        function isValidPosition(row, col) {
+            return row >= 0 && row < 8 && col >= 0 && col < 8;
+        }
+        
+        // Limpa destaques do tabuleiro
+        function clearHighlights() {
+            document.querySelectorAll('.selected, .possible-move, .capture-path').forEach(el => {
+                el.classList.remove('selected', 'possible-move', 'capture-path');
+            });
+        }
+        
+        // Atualiza a exibição do jogador atual
+        function updateCurrentPlayerDisplay() {
+            const playerElement = document.querySelector('#currentPlayer span');
+            playerElement.textContent = currentPlayer === 'pink' ? 'Ela (Rosa)' : 'Você (Azul)';
+            playerElement.style.color = currentPlayer === 'pink' ? '#ff66b3' : '#5d9cec';
+            
+            if (mustCapture) {
+                playerElement.textContent += ' (Captura Obrigatória)';
+            }
+        }
+        
+        // Reinicia o jogo
+        function resetGame() {
+            currentPlayer = 'pink';
+            selectedPiece = null;
+            mustCapture = false;
+            multipleCaptureMode = false;
+            piecesThatMustCapture = [];
+            currentCapturePath = [];
+            initGame();
+        }
+        
+        // Inicia o jogo quando a página carrega
+        window.onload = initGame;
+    </script>
+</body>
+</html>
